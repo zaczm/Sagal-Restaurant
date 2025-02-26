@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagal Restaurant | Authentic Cuisine in Twin Cities</title>
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS file link -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Restaurant Brand/Logo -->
+            <a class="navbar-brand" href="#">Sagal Restaurant</a>
+            
+            <!-- Mobile Navigation Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Hours & Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section py-5 text-center text-white">
+        <div class="container">
+            <!-- Main Headline -->
+            <h1 class="display-4">Welcome to Sagal Restaurant</h1>
+            <!-- Restaurant Description -->
+            <p class="lead">Authentic International Cuisine in the Heart of Twin Cities</p>
+            <!-- Call-to-Action Button -->
+            <a href="#menu" class="btn btn-primary btn-lg mt-3">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Signature Dishes</h2>
+            
+            <!-- Menu Items Row - Bootstrap Grid System -->
+            <div class="row">
+                <!-- Menu Item 1 - Bootstrap Card Component -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <!-- Menu Item Image -->
+                        <img src="images/Nasi_Goreng_Indonesian_spiced_rice.jpg" class="card-img-top" alt="Nasi Goreng Indonesian spiced rice with chicken">
+                        <div class="card-body">
+                            <!-- Menu Item Title and Price -->
+                            <h5 class="card-title">Nasi Goreng <span class="float-end text-primary">$15.99</span></h5>
+                            <!-- Menu Item Description -->
+                            <p class="card-text">Indonesian spiced rice with chicken, fried egg and cucumber accompanied by beef satays and peanut dip.</p>
+                        </div>
+                        <!-- Image Attribution -->
+                        <div class="card-footer text-muted small">
+                            Photo by FoodishFetish (CC BY-NC-ND 2.0)
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 - Bootstrap Card Component -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <!-- Menu Item Image -->
+                        <img src="images/sandwich_mixto_con_ensalada.jpg" class="card-img-top" alt="Mixed sandwich with salad">
+                        <div class="card-body">
+                            <!-- Menu Item Title and Price -->
+                            <h5 class="card-title">Gourmet Sandwich <span class="float-end text-primary">$12.99</span></h5>
+                            <!-- Menu Item Description -->
+                            <p class="card-text">A delicious mixed sandwich served with a fresh garden salad and our house specialty sauce.</p>
+                        </div>
+                        <!-- Image Attribution -->
+                        <div class="card-footer text-muted small">
+                            Photo by xurde (CC BY-SA 2.0)
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 3 - Bootstrap Card Component -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <!-- Menu Item Image -->
+                        <img src="images/Grilled_chicken_rice_and_vegetables.jpg" class="card-img-top" alt="Grilled chicken fillets with rice and vegetables">
+                        <div class="card-body">
+                            <!-- Menu Item Title and Price -->
+                            <h5 class="card-title">Grilled Chicken Platter <span class="float-end text-primary">$16.99</span></h5>
+                            <!-- Menu Item Description -->
+                            <p class="card-text">Tender grilled chicken fillets served with seasoned rice and fresh sautéed vegetables.</p>
+                        </div>
+                        <!-- Image Attribution -->
+                        <div class="card-footer text-muted small">
+                            Photo by Jacek Chabraszewski
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <!-- Bootstrap Grid System for Two Columns -->
+            <div class="row">
+                <!-- About Us Text Column -->
+                <div class="col-lg-6">
+                    <h2>About Sagal Restaurant</h2>
+                    <p>Welcome to Sagal Restaurant, where we bring authentic international flavors to the Twin Cities. Our restaurant was founded with a passion for creating memorable dining experiences through delicious food and warm hospitality.</p>
+                    
+                    <p>Each dish is carefully prepared by our skilled chefs using fresh, locally-sourced ingredients whenever possible. We take pride in offering a diverse menu that caters to various tastes and dietary preferences.</p>
+                    
+                    <p>Whether you're joining us for a casual lunch, family dinner, or special celebration, we strive to make every visit to Sagal Restaurant exceptional.</p>
+                </div>
+                
+                <!-- Values List Column - Bootstrap Card and List Group Components -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Our Values</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Quality ingredients in every dish</li>
+                            <li class="list-group-item">Authentic recipes from around the world</li>
+                            <li class="list-group-item">Warm, welcoming atmosphere</li>
+                            <li class="list-group-item">Commitment to customer satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Visit Us</h2>
+            
+            <!-- Bootstrap Grid System for Two Columns -->
+            <div class="row">
+                <!-- Hours Card - Bootstrap Card Component -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Hours of Operation</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><strong>Monday - Thursday:</strong> 11:00 AM - 9:00 PM</li>
+                                <li><strong>Friday - Saturday:</strong> 11:00 AM - 10:00 PM</li>
+                                <li><strong>Sunday:</strong> 12:00 PM - 8:00 PM</li>
+                            </ul>
+                            <p class="mt-3">Reservations recommended for parties of 5 or more.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Location Card - Bootstrap Card Component -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Our Location</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- HTML5 Address Element -->
+                            <address>
+                                <strong>Sagal Restaurant</strong><br>
+                                123 Restaurant Row<br>
+                                Minneapolis, MN 55403<br><br>
+                                <abbr title="Phone">Phone:</abbr> (612) 555-1234<br>
+                                <abbr title="Email">Email:</abbr> <a href="mailto:info@sagalrestaurant.com">info@sagalrestaurant.com</a>
+                            </address>
+                            <p>Convenient location with ample parking. Near public transportation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Attribution -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Copyright Information -->
+                <div class="col-md-6">
+                    <p>&copy; 2025 Sagal Restaurant. All rights reserved.</p>
+                </div>
+                
+                <!-- Image Credits -->
+                <div class="col-md-6">
+                    <h6>Image Credits:</h6>
+                    <ul class="list-unstyled small">
+                        <li>"Nasi Goreng Indonesian spiced rice with chicken, fried egg and cucumber accompanied by beef satays and peanut dip" by FoodishFetish is licensed under CC BY-NC-ND 2.0.</li>
+                        <li>"sandwich mixto con ensalada" by xurde is licensed under CC BY-SA 2.0.</li>
+                        <li>"Grilled chicken fillets, rice and vegetables" by Jacek Chabraszewski.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

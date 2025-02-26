@@ -1,0 +1,128 @@
+/* 
+   Styles.css - Custom styles for Sagal Restaurant website
+   This file contains all custom styling beyond what Bootstrap provides
+*/
+
+/* Custom colors using CSS variables for easy updates */
+:root {
+    --primary-color: #5e3a1a; /* Rich brown color for a restaurant theme */
+    --secondary-color: #d9a566; /* Warm gold accent */
+    --dark-color: #2d2d2d; /* Dark color for text */
+    --light-color: #f8f9fa; /* Light color for backgrounds */
+}
+
+/* ======= CUSTOM STYLE 1: TYPOGRAPHY ======= */
+/* Restaurant name styling */
+.navbar-brand {
+    font-family: 'Georgia', serif; /* Elegant serif font for restaurant name */
+    font-size: 1.8rem; /* Larger size for emphasis */
+    letter-spacing: 1px; /* Slightly spaced letters for elegance */
+    font-weight: bold; /* Make the brand name stand out */
+}
+
+/* Section headings */
+h2 {
+    font-family: 'Georgia', serif; /* Matching font for headings */
+    border-bottom: 2px solid var(--secondary-color); /* Decorative underline */
+    display: inline-block; /* Make the border only as wide as the text */
+    padding-bottom: 5px; /* Space between text and border */
+    margin-bottom: 25px; /* Space after the heading */
+}
+
+/* Card titles */
+.card-title {
+    font-family: 'Georgia', serif; /* Matching font for menu items */
+    border-bottom: 1px dotted #ccc; /* Subtle separator between title and content */
+    padding-bottom: 10px; /* Space between title and separator */
+}
+
+/* ======= CUSTOM STYLE 2: HERO SECTION ======= */
+/* Hero section background image and overlay */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('../images/Nasi_Goreng_Indonesian_spiced_rice.jpg');
+    background-size: cover; /* Make sure image covers the area */
+    background-position: center; /* Center the background image */
+    padding: 120px 0; /* Vertical spacing */
+    margin-bottom: 20px; /* Space after hero section */
+}
+
+/* Hero text enhancement */
+.hero-section .display-4 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability */
+    margin-bottom: 20px; /* Space after the main title */
+}
+
+/* ======= CUSTOM STYLE 3: CARD ANIMATIONS ======= */
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
+}
+
+/* Card image sizing */
+.card-img-top {
+    height: 220px; /* Uniform height for all images */
+    object-fit: cover; /* Ensure images cover the space without distortion */
+}
+
+/* ======= BOOTSTRAP COMPONENT CUSTOMIZATION ======= */
+/* Custom button colors to match brand */
+.btn-primary {
+    background-color: var(--primary-color); /* Custom primary color */
+    border-color: var(--primary-color); /* Matching border */
+}
+
+.btn-primary:hover {
+    background-color: #4a2e15; /* Darker shade on hover */
+    border-color: #4a2e15; /* Matching border */
+}
+
+/* Card header customization */
+.bg-primary {
+    background-color: var(--primary-color) !important; /* Override Bootstrap's primary color */
+}
+
+.card-header {
+    font-weight: bold; /* Bold text in card headers */
+}
+
+/* ======= RESPONSIVE ADJUSTMENTS ======= */
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0; /* Less padding on mobile */
+    }
+    
+    section {
+        padding: 40px 0; /* Less section padding on mobile */
+    }
+}
+
+/* ======= SECTION SPACING ======= */
+/* Consistent spacing between sections */
+section {
+    padding: 60px 0; /* Vertical padding for all sections */
+}
+
+/* ======= FOOTER STYLING ======= */
+footer {
+    font-size: 0.9rem; /* Smaller text in footer */
+}
+
+/* Footer links */
+footer a {
+    color: var(--secondary-color); /* Custom color for footer links */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    color: white; /* White text on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
